@@ -135,6 +135,33 @@ Szablon wyników:
 
 Opus wygrywa, jeśli średnio daje co najmniej jeden produkt "do wzięcia" więcej dziennie albo wyraźnie mniej zmyślonych liczb. Wtedy przejdź do sekcji 5. Jeśli różnica jest w granicach szumu, zostań na Sonnecie i usuń folder `agent-produktowy-ab` oraz zadanie z Harmonogramu.
 
-## 8. Czego ten plik nie obejmuje
+## 8. Skille przełączone na Opus 5.5
+
+Claude Code czyta z frontmattera SKILL.md dwa pola: `model` i `effort` (dokumentacja: https://code.claude.com/docs/en/skills). Model ze skilla działa do końca bieżącej tury, a potem sesja wraca na swój model. Sesja na Sonnecie przełącza się więc na Opusa tylko na czas pracy skilla. Pole `effort` przyjmuje `low`, `medium`, `high`, `xhigh` i `max`.
+
+Opusa dostają trzy skille, w których zysk jest duży:
+
+| Skill | Dopisz do frontmattera | Dlaczego |
+|---|---|---|
+| hormozi-report | `model: claude-opus-5-5` i `effort: high` | ranking ograniczeń, długi raport, oddzielenie cytatów od interpretacji |
+| clone-link-to-my-shopify | `model: claude-opus-5-5` i `effort: high` | długa praca nad kodem: JSX, Liquid, koszyk Shopify |
+| dekoder-ugc | `model: claude-opus-5-5` i `effort: high` | analiza obrazu scena po scenie, błąd przechodzi do kreator-ugc |
+
+Przykład dla dekoder-ugc (dwie nowe linie pod `description`):
+
+```yaml
+---
+name: dekoder-ugc
+description: Rozkłada dowolne referencyjne wideo UGC ...
+model: claude-opus-5-5
+effort: high
+---
+```
+
+Bez zmian zostają kreator-ugc, 321-cloth-reveal, store-point-pan-reveal, html-page-cloner, humanizer, session-handoff, watch i brainstorming. Opus niewiele im daje, a kosztuje dwa razy więcej. task-observer też zostaje bez zmian. Włącza się na początku prawie każdej sesji, więc pole `model` przełączałoby na Opusa niemal całą twoją pracę.
+
+Skille są synchronizowane z twojego konta claude.ai jako pluginy. Edycja kopii w jednym kontenerze lub na jednym komputerze zniknie przy następnej synchronizacji. Te dwie linie trzeba więc dopisać w źródle pluginu: w miejscu, z którego instalowałeś skill, albo w claude.ai w ustawieniach skilli. Pole działa w Claude Code. Czy zwykły czat claude.ai je uwzględnia, nie sprawdziłem.
+
+## 9. Czego ten plik nie obejmuje
 
 Sesja w chmurze nie widziała kodu agentów, więc ścieżki `prompt.md`, sposób wywołania i nazwy plików w sekcji 6 są założeniem. Prompt z sekcji 4 każe lokalnemu Claude Code najpierw sprawdzić, jak jest naprawdę, i dopasować do tego skrypt. Rutyny w chmurze "Poranny digest automatów" nie zmieniano. Zostaje na Sonnecie, bo tylko sprawdza daty plików.
