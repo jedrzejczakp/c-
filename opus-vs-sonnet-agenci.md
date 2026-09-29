@@ -31,6 +31,10 @@ Agent produktowy stoi na początku całego procesu, dlatego zysk jest tam najwi�
 
 W porównaniu Amazon z Allegro trzeba rozpoznać ten sam produkt po różnych nazwach, zestawach i wariantach, a potem odjąć prowizję Allegro, wysyłkę i VAT. W obu tych rzeczach Opus myli się rzadziej.
 
+## Wynik pierwszego testu (chmura, 2026-09-29)
+
+Zastępczy test w chmurze wygrał Opus 5.5. Opus podał ceny zakupu dla 4 z 5 produktów, a Sonnet dla żadnego. Opus policzył marże, odrzucił 2 produkty przynoszące stratę i znalazł cło 3 EUR na paczki spoza UE, obowiązujące od lipca 2026. Szczegóły są w `ab-test/wynik-2026-09-29.md`. Test lokalny poniżej nadal jest potrzebny, bo w chmurze modele nie mogły otwierać stron.
+
 ## 3. Plan testu A/B (3 do 5 dni)
 
 Najpierw zmierz różnicę, dopiero potem zmieniaj produkcję. Test wygląda tak:
