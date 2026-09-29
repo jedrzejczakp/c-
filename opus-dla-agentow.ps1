@@ -1,14 +1,28 @@
-﻿# Przestawia agent-produktowy na Opus 5.5 z effortem high, na stałe.
+﻿# Przestawia na Opus 5.5 (effort high) agentów: agent-produktowy, agent-inwestycyjny
+# oraz folder z porównaniem Amazon/Allegro (wykrywany po nazwie). Zmiana jest trwała.
 # Uruchom na komputerze w PowerShell:
-#   powershell -ExecutionPolicy Bypass -File .\opus-dla-agenta-produktowego.ps1
-# Każdy zmieniany plik dostaje kopię <nazwa>.bak. Skrypt nie uruchamia agenta i nie czyta plików .env.
+#   powershell -ExecutionPolicy Bypass -File .\opus-dla-agentow.ps1
+# Każdy zmieniany plik dostaje kopię <nazwa>.bak. Skrypt nie uruchamia agentów i nie czyta plików .env.
 
 $ErrorActionPreference = "Stop"
-$agent    = "C:\Users\User\Desktop\projekty\agent-produktowy"
-$model    = "claude-opus-5-5"
-$settings = Join-Path $agent ".claude\settings.json"
+$root  = "C:\Users\User\Desktop\projekty"
+$model = "claude-opus-5-5"
+$utf8  = New-Object System.Text.UTF8Encoding($false)
 
-if (-not (Test-Path $agent)) { throw "Nie ma folderu $agent" }
+$names = @("agent-produktowy", "agent-inwestycyjny")
+$names += Get-ChildItem $root -Directory | Where-Object { $_.Name -match 'amazon|allegro|zabawk|porown' } | ForEach-Object { $_.Name }
+$names = $names | Select-Object -Unique
+Write-Host "Agenci do przestawienia: $($names -join ', ')"
+if (-not ($names | Where-Object { $_ -match 'amazon|allegro|zabawk|porown' })) {
+    Write-Warning "Nie znalazłem folderu z porównaniem Amazon/Allegro. Jeśli ma inną nazwę, dopisz ją do listy `$names na górze skryptu."
+}
+
+$changed = @()
+foreach ($name in $names) {
+$agent    = Join-Path $root $name
+$settings = Join-Path $agent ".claude\settings.json"
+if (-not (Test-Path $agent)) { Write-Warning "Nie ma folderu $agent, pomijam"; continue }
+Write-Host "`n=== $name ==="
 
 # 1. Ustawienia projektu: model i effort
 New-Item -ItemType Directory -Force -Path (Split-Path $settings) | Out-Null
@@ -20,9 +34,8 @@ if (Test-Path $settings) {
 }
 $json | Add-Member -NotePropertyName model       -NotePropertyValue $model -Force
 $json | Add-Member -NotePropertyName effortLevel -NotePropertyValue "high" -Force
-$utf8 = New-Object System.Text.UTF8Encoding($false)
 [IO.File]::WriteAllText($settings, ($json | ConvertTo-Json -Depth 20), $utf8)
-$changed = @($settings)
+$changed += $settings
 Write-Host "Ustawiono model $model i effortLevel high w $settings"
 
 # 2. Model wpisany na sztywno w skryptach agenta (flaga --model albo nazwa modelu Sonnet)
@@ -41,10 +54,9 @@ foreach ($f in $files) {
     }
 }
 
-# 3. Rzeczy, które mogłyby nadpisać ustawienia (tylko raport, bez zmian)
-if ($env:ANTHROPIC_MODEL) { Write-Warning "Zmienna ANTHROPIC_MODEL=$($env:ANTHROPIC_MODEL) nadpisuje ustawienia. Usuń ją albo ustaw na $model." }
+# 3. Zadania w Harmonogramie, które mogłyby wymusić inny model (tylko raport)
 schtasks /query /fo CSV /v | ConvertFrom-Csv |
-    Where-Object { $_.'Task To Run' -match 'agent-produktowy' -or $_.'Zadanie do uruchomienia' -match 'agent-produktowy' } |
+    Where-Object { $_.'Task To Run' -match [regex]::Escape($name) -or $_.'Zadanie do uruchomienia' -match [regex]::Escape($name) } |
     ForEach-Object {
         $cmd = $_.'Task To Run'; if (-not $cmd) { $cmd = $_.'Zadanie do uruchomienia' }
         if ($cmd -match '--model' -and $cmd -notmatch [regex]::Escape($model)) {
@@ -58,14 +70,18 @@ schtasks /query /fo CSV /v | ConvertFrom-Csv |
 Push-Location $agent
 $out = claude -p "Odpowiedz tylko identyfikatorem modelu, na którym działasz." --output-format json | ConvertFrom-Json
 Pop-Location
-Write-Host "Odpowiedź testowa: $($out.result)"
+Write-Host "$name, odpowiedź testowa: $($out.result)"
 if ($out.modelUsage) { Write-Host "Użyty model: $(($out.modelUsage.PSObject.Properties.Name) -join ', ')" }
 
+}
+
+if ($env:ANTHROPIC_MODEL) { Write-Warning "Zmienna ANTHROPIC_MODEL=$($env:ANTHROPIC_MODEL) nadpisuje ustawienia wszystkich agentów. Usuń ją albo ustaw na $model." }
+
 # 5. Commit w repozytorium projekty, jeśli jest
-Push-Location (Split-Path $agent)
+Push-Location $root
 if (Test-Path .git) {
     foreach ($c in $changed) { git add -- $c }
-    git commit -m "agent-produktowy: Opus 5.5, effort high" | Out-Null
+    git commit -m "Opus 5.5, effort high: $($names -join ', ')" | Out-Null
     Write-Host "Zrobiono commit w repozytorium projekty."
 }
 Pop-Location
