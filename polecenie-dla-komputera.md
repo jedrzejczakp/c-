@@ -16,7 +16,7 @@ Wprowadź ustalone zmiany modeli w moich agentach. Zasady: nie uruchamiaj agent�
 
 4. Sprawdź bez uruchamiania pełnego agenta, że ustawienia działają: w folderze agent-produktowy wykonaj claude -p "Podaj tylko nazwę modelu, na którym działasz." --output-format json i pokaż pole z modelem.
 
-5. Kopia na GitHub (tylko jeśli repo https://github.com/jedrzejczakp/claude-kopia istnieje): sklonuj je do %USERPROFILE%\claude-kopia i uruchom skrypty\zainstaluj-kopie.ps1. Pokaż ostatnie 3 linie skrypty\kopia.log. Jeśli skan zgłosi sekret, wypisz tylko ścieżkę pliku (bez wartości) i zaproponuj przeniesienie sekretu do .env.
+5. Kopia na GitHub: sklonuj branch claude-kopia z prywatnego repo https://github.com/jedrzejczakp/git-kurs do %USERPROFILE%\claude-kopia (git clone -b claude-kopia --single-branch ...) i uruchom skrypty\zainstaluj-kopie.ps1. Pokaż ostatnie 3 linie skrypty\kopia.log. Jeśli skan zgłosi sekret, wypisz tylko ścieżkę pliku (bez wartości) i zaproponuj przeniesienie sekretu do .env.
 
 6. Zrób commit zmian w repozytorium projekty z opisem "Modele: Opus 5.5 dla agent-produktowy i porównania Amazon/Allegro, reszta Sonnet 5".
 
