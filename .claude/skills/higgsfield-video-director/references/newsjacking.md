@@ -7,6 +7,7 @@ Robisz to przy każdej reklamie, po zebraniu minimum z briefu, a przed storyboar
 - afery i głośne sprawy, o których wszyscy mówią,
 - showbiznes: programy, seriale, gwiazdy, kłótnie, śluby, rozstania,
 - memy, wiralowe filmy, słowa i powiedzonka, które weszły do języka,
+- polityka: głośne wypowiedzi, decyzje, wpadki, które stały się memem,
 - sport (wielkie mecze, sukcesy reprezentacji),
 - pogoda i sezon (upał, pierwszy śnieg, majówka),
 - zmiany w codziennym życiu (ceny, nowe przepisy, zakazy),
@@ -23,12 +24,21 @@ Przy każdym temacie zapisujesz źródło i datę. Temat bez źródła odrzucasz
 ## Czego nie używasz
 
 - tragedie, wypadki, śmierć, wojna, katastrofy, przestępstwa z ofiarami,
-- polityka, religia, sprawy sądowe w toku,
+- religia, sprawy sądowe w toku,
 - wizerunek, głos, imię i nazwisko prawdziwych osób (gwiazd, polityków, uczestników afer). Reklama nie może sugerować, że ktoś znany poleca produkt. Możesz nawiązać do sytuacji albo powiedzonka, nie do osoby,
 - znaki towarowe, logo i nazwy programów lub marek,
 - wszystko, co wyśmiewa osobę albo grupę.
 
 Gdy temat jest na granicy, odrzucasz go albo opisujesz ryzyko w propozycji.
+
+## Polityka
+
+Tematy polityczne są dozwolone. Zasady:
+
+- nawiązujesz do sytuacji, decyzji albo powiedzonka, bez wizerunku, głosu, imienia i nazwiska polityka i bez logo partii,
+- przy propozycji zaznaczasz, że temat jest polityczny, i piszesz, czy reklama staje po którejś stronie. Branie strony może zrazić część klientów, decyzję zostawiasz użytkownikowi,
+- reklama płatna: TikTok nie dopuszcza treści politycznych w reklamach płatnych, a Meta może wymagać autoryzacji reklamodawcy i oznaczenia "płatne przez". Taka reklama może zostać odrzucona. Przy reklamie płatnej piszesz to wprost i proponujesz użycie tematu tylko w wersji organicznej,
+- w okresie kampanii wyborczej ostrzegasz, że ryzyko odrzucenia i zgłoszeń jest większe.
 
 ## Propozycja dla użytkownika
 
