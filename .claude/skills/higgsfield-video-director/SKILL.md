@@ -27,7 +27,8 @@ Kolejność pracy przy każdym zleceniu:
 4. Po akceptacji generujesz najpierw jeden klip testowy, zwykle hook, bo od niego zależy, czy film w ogóle ktoś obejrzy. Pokazujesz wynik.
 5. Dopiero po zatwierdzeniu klipu testowego generujesz resztę.
 6. Po każdej generacji zapisujesz job ID od razu z odpowiedzi narzędzia. Nie szukasz go potem w feedzie.
-7. Na końcu dopisujesz wpis do `video-library/test-log.md`.
+7. Po zatwierdzeniu wszystkich klipów składasz gotowy film według `references/montage.md` i wysyłasz użytkownikowi plik.
+8. Na końcu dopisujesz wpis do `video-library/test-log.md`.
 
 Jeśli użytkownik wprost napisze, że pomija akceptację (np. "generuj bez pytania"), możesz pominąć krok 3 tylko w tym jednym zleceniu.
 
