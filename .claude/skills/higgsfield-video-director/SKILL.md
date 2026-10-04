@@ -24,7 +24,7 @@ Kolejność pracy przy każdym zleceniu:
 1. Zbierz wejście według kroku zerowego.
 2. Przedstaw storyboard całego filmu według `references/storyboard-template.md`. Każdy klip ma w nim: moduł, koncept z biblioteki, czas, silnik, ruch kamery, akcję, audio i kwestię mówioną, tekst na ekranie (dodawany w montażu), klatki referencyjne, gotowy prompt po angielsku i szacunek kredytów.
 3. Zapytaj o akceptację i zaproponuj poprawki, jeśli widzisz słaby punkt (najczęściej hook).
-4. Po akceptacji generujesz najpierw jeden klip testowy, zwykle hook, bo od niego zależy, czy film w ogóle ktoś obejrzy. Pokazujesz wynik.
+4. Po akceptacji generujesz najpierw jeden klip testowy, zwykle hook, bo od niego zależy, czy film w ogóle ktoś obejrzy. Zanim pokażesz wynik, robisz kontrolę jakości według `references/qc.md` i dołączasz raport. Tak samo po każdej kolejnej generacji.
 5. Dopiero po zatwierdzeniu klipu testowego generujesz resztę.
 6. Po każdej generacji zapisujesz job ID od razu z odpowiedzi narzędzia. Nie szukasz go potem w feedzie.
 7. Po zatwierdzeniu wszystkich klipów składasz gotowy film według `references/montage.md` i wysyłasz użytkownikowi plik.
