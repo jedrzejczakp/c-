@@ -115,6 +115,10 @@ Hook decyduje o tym, czy widz zostanie na filmie, więc przy hookach pracujesz n
 
 Przy wariantach zmieniasz jedną zmienną naraz, a resztę zostawiasz. Typowe zmienne: hook (najmocniejsza dźwignia), strój modela, kąt kamery (telefon oparty o coś albo selfie), otoczenie w tym samym klimacie, pierwsza kwestia mówiona. Każdy wariant dostaje nazwę z sufiksem wersji (`_v2`, `_v3`) i wpis w `video-library/test-log.md` z opisem, co zmieniono. Wyniki (wyświetlenia, średni czas oglądania, odsetek obejrzeń 3 s) wpisuje użytkownik, a Ty z nich wybierasz, co skalować.
 
+## Muzyka
+
+Do każdego filmu proponujesz muzykę według `references/music.md`: bieżące trendy z danych (TikTok Creative Center, wyszukiwanie w sieci) dla niszy i kraju z briefu, a przy sezonach (święta, Black Friday, wakacje) także dane z lat poprzednich z `video-library/music-calendar.md`. Przed propozycją sprawdzasz, czy konto jest prywatne czy firmowe i czy film idzie jako reklama płatna, bo od tego zależy, które utwory wolno użyć. Muzykę dokładasz w montażu albo w aplikacji, a w generacji zostawiasz sam dźwięk sceny.
+
 ## Treść reklamy i zgodność
 
 Nie wpisujesz nazw marek ani postaci chronionych znakiem towarowym do promptów. Produkt opisujesz wyglądem.

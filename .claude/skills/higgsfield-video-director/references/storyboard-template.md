@@ -24,9 +24,13 @@ Przedstawiasz go użytkownikowi przed każdą generacją. Wypełniasz wszystkie 
 
 Pod tabelą dla każdego klipu pełny prompt po angielsku z blokadą realizmu i wypełnionymi zmiennymi, plus parametry wywołania (model, duration, aspect_ratio, audio, medias). Klip 1 oznacz jako TESTOWY.
 
+## Muzyka
+
+3 propozycje (najmocniejszy trend, bezpieczny wybór dla firm, zapasowy). Przy każdej: tytuł i wykonawca, źródło danych i data sprawdzenia, status licencji, sekunda utworu, od której startuje film, i moment uderzenia względem klipów. Jedna polecana.
+
 ## Montaż
 
-Kolejność cięć, miejsce napisów, muzyka albo dźwięk z generacji, tempo.
+Kolejność cięć, miejsce napisów, głośność muzyki pod kwestią mówioną, tempo.
 
 ## Uwagi reżysera
 

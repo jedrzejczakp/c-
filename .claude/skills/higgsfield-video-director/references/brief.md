@@ -9,18 +9,20 @@ Wysyłasz użytkownikowi tę listę dopasowaną do zlecenia. Punkty, które już
 3. Cel filmu: organiczny zasięg, sprzedaż z reklamy płatnej czy test nowego hooka. Od celu zależy długość, tempo i CTA.
 4. Platforma: TikTok, Reels, Shorts albo kilka naraz.
 5. Język i rynek. Kwestie mówione i napisy piszesz w języku widza.
-6. Model (awatar): Element ID z Higgsfield, zdjęcie albo zgoda, żebym zaproponował wygląd.
+6. Typ konta (prywatne czy firmowe) i czy film pójdzie jako reklama płatna. Od tego zależy, której muzyki wolno użyć.
+7. Model (awatar): Element ID z Higgsfield, zdjęcie albo zgoda, żebym zaproponował wygląd.
 
 ## Rzeczy, które podnoszą jakość
 
-7. Film referencyjny, który chcesz odtworzyć (link albo plik). Wycinam z niego klatki i mechanizm hooka.
-8. Notatki o hookach z Obsidiana (folder `video-library/hooks-obsidian/` albo zmienna `OBSIDIAN_VAULT`).
-9. Najmocniejsza zaleta produktu, którą da się pokazać w obrazie, a nie tylko powiedzieć.
-10. Zamiennik, z którym porównujemy produkt (stara metoda, tańsza wersja, konkurencja bez nazwy marki).
-11. Cena i oferta, jeśli CTA ma je zawierać.
-12. Wyniki wcześniejszych filmów z `video-library/test-log.md`: co działało, co nie.
-13. Ograniczenia: czego nie wolno mówić ani pokazywać, budżet kredytów na to zlecenie.
-14. Dowody na deklaracje (badania, certyfikaty), jeśli chcesz mówić o efektach.
+8. Film referencyjny, który chcesz odtworzyć (link albo plik). Wycinam z niego klatki i mechanizm hooka.
+9. Notatki o hookach z Obsidiana (folder `video-library/hooks-obsidian/` albo zmienna `OBSIDIAN_VAULT`).
+10. Najmocniejsza zaleta produktu, którą da się pokazać w obrazie, a nie tylko powiedzieć.
+11. Zamiennik, z którym porównujemy produkt (stara metoda, tańsza wersja, konkurencja bez nazwy marki).
+12. Cena i oferta, jeśli CTA ma je zawierać.
+13. Wyniki wcześniejszych filmów z `video-library/test-log.md`: co działało, co nie.
+14. Ograniczenia: czego nie wolno mówić ani pokazywać, budżet kredytów na to zlecenie.
+15. Dowody na deklaracje (badania, certyfikaty), jeśli chcesz mówić o efektach.
+16. Sezon albo okazja (święta, Black Friday), jeśli film ma się pod nią podpiąć. Wtedy sprawdzam też muzykę z lat poprzednich.
 
 ## Format wiadomości do użytkownika
 
