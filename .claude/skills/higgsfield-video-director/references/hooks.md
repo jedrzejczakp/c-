@@ -30,43 +30,43 @@ Jeden hook to jedna zmienna w split teście. Pozostałe klipy filmu zostają te 
 
 ## Bank wzorców
 
-Każdy wzorzec ma przykład dla mydła do włosów (szampon w kostce).
+Przykłady są szablonami. [produkt] to produkt z briefu, [zamiennik] to rzecz, którą produkt zastępuje, [problem] to problem widza. Zawsze przepisujesz je pod produkt z briefu.
 
 ### Przerwanie wzorca (pattern interrupt)
 Nagły ruch albo zdarzenie fizyczne w pierwszej sekundzie: upadek, rzut, zgniecenie, rozlanie.
-Przykład: plastikowa butelka szamponu wylatuje z ręki i uderza o podłogę łazienki, kamera nie drgnie. Tekst: "Wyrzuciłam szampon na zawsze".
+Przykład: [zamiennik] wylatuje z ręki i uderza o podłogę, kamera nie drgnie. Tekst: "Wyrzuciłam [zamiennik] na zawsze".
 
 ### Odsłonięcie z odliczaniem
 Ukryty produkt i obietnica pokazania. Format `321-cloth-reveal`.
-Przykład: kostka pod ściereczką na umywalce, "Trzy, dwa, jeden".
+Przykład: [produkt] pod materiałem na stole, "Trzy, dwa, jeden".
 
 ### Reakcja w sklepie (point and pan)
 Zszokowana osoba wskazuje coś poza kadrem. Format `store-point-pan-reveal`.
-Przykład: gasp w alejce drogerii, panorama na półkę z kostkami mydła.
+Przykład: gasp w alejce sklepu, panorama na półkę z [produkt].
 
 ### Wynik najpierw
 Zaczynasz od efektu, dopiero potem pokazujesz, jak do niego doszło.
-Przykład: zbliżenie na suche, błyszczące włosy w świetle okna. Tekst: "Bez szamponu od 30 dni".
+Przykład: zbliżenie na efekt użycia [produkt]. Tekst: "Od 30 dni bez [zamiennik]".
 
 ### Wywołanie problemu
 Nazywasz problem widza w pierwszych słowach.
-Przykład: "Jeśli twoje włosy są tłuste już drugiego dnia, posłuchaj".
+Przykład: "Jeśli [problem], posłuchaj".
 
 ### Sprzeciw wobec powszechnej opinii
 Teza, z którą widz chce się kłócić.
-Przykład: "Twój szampon to w 80 procentach woda i płacisz za plastik". Liczbę podajesz tylko wtedy, gdy masz źródło (np. skład INCI konkretnego produktu).
+Przykład: "Przepłacasz za [zamiennik] i oto dlaczego". Liczby i fakty podajesz tylko wtedy, gdy masz źródło.
 
 ### POV
 Widz wchodzi w sytuację.
-Przykład: "POV: twoja łazienka po wyrzuceniu wszystkich butelek".
+Przykład: "POV: twój dzień, odkąd masz [produkt]".
 
 ### Ostrzeżenie
 "Nie kupuj X, zanim nie zobaczysz Y".
-Przykład: "Nie kupuj kolejnego szamponu, zanim nie zobaczysz tej kostki".
+Przykład: "Nie kupuj kolejnego [zamiennik], zanim nie zobaczysz tego".
 
 ### Test na żywo
 Obietnica sprawdzenia czegoś na oczach widza.
-Przykład: kostka wrzucona do szklanki wody, "Sprawdzam, czy rozpuści się szybciej niż szampon".
+Przykład: [produkt] i [zamiennik] obok siebie w tym samym teście, "Sprawdzam, który wytrzyma dłużej".
 
 ## Format odpowiedzi z hookami
 

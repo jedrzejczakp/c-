@@ -25,11 +25,17 @@ Plik czyta i uzupełnia skill `higgsfield-video-director`. Każdy wpis to jeden 
 
 ## Produkty
 
-### hair_soap_bar
-- Opis wizualny: do uzupełnienia (kształt, kolor kostki, opakowanie, faktura)
-- Media UUID zdjęcia produktu: do uzupełnienia
+Każdy produkt dostaje osobny wpis. Biblioteka nie zakłada żadnego produktu z góry.
+
+### nazwa_produktu
+- Opis wizualny: kształt, kolor, materiał, opakowanie, wielkość w dłoni
+- Media UUID zdjęć produktu: do uzupełnienia
+- Problem, który rozwiązuje: do uzupełnienia
+- Zamiennik, z którym go porównujemy: do uzupełnienia
 
 ## Koncepty
+
+Koncepty są niezależne od produktu. [PRODUCT] to produkt z sekcji "Produkty", [OLD_ALTERNATIVE] to rzecz, którą produkt zastępuje, [MODEL] to awatar z sekcji "Modele".
 
 ### store_shocked_concept
 - Nazwa długa: shocked coffee drop panning to the right hook (w filmie źródłowym "store concept")
@@ -43,33 +49,34 @@ Plik czyta i uzupełnia skill `higgsfield-video-director`. Każdy wpis to jeden 
 - Prompt bazowy (EN): według szablonu ze skilla `store-point-pan-reveal`, wariant z upuszczeniem kawy, panorama w prawo, [PRODUCT] na półce.
 - Notatki z testów: brak
 
-### hair_soap_321_hook
+### 321_reveal_hook
 - Moduł: Hook
 - Silnik: seedance_2_0 (zmiana mimiki i ruch odsłonięcia)
 - Czas: 5 s
-- First Frame: osoba trzyma plastikową butelkę szamponu, matowe włosy, rozczarowana mina; do uzupełnienia
-- End Frame: miłe zaskoczenie, w dłoni naturalna kostka mydła do włosów, zdrowe lśniące włosy; do uzupełnienia
-- Stałe: tło łazienki, światło dzienne z okna, ujęcie telefonem w stylu iPhone
-- Zmienne: model, opakowanie produktu
-- Prompt bazowy (EN): Handheld iPhone 12 video in a bright everyday bathroom, daylight from a window on the left. [MODEL] holds a plastic shampoo bottle, looks at it with a disappointed expression, hair dull and flat. She tosses the bottle out of frame and in the same motion raises a natural hair soap bar [PRODUCT] toward the camera, her expression turning to a pleasantly surprised smile. Her hair looks healthy and natural, no dramatic change in the frame. [REALISM LOCK]
+- First Frame: osoba trzyma [OLD_ALTERNATIVE] z rozczarowaną miną; do uzupełnienia
+- End Frame: miłe zaskoczenie, w dłoni [PRODUCT]; do uzupełnienia
+- Stałe: zwykłe domowe wnętrze, światło dzienne z okna, ujęcie telefonem
+- Zmienne: model, produkt, zamiennik, wnętrze
+- Prompt bazowy (EN): Handheld iPhone 12 video in a bright everyday [ROOM], daylight from a window on the left. [MODEL] holds [OLD_ALTERNATIVE] and looks at it with a disappointed expression. She tosses it out of frame and in the same motion raises [PRODUCT] toward the camera, her expression turning to a pleasantly surprised smile. [REALISM LOCK]
 - Notatki z testów: brak
+- Pochodzenie: wzór zbudowany na przykładzie mydła do włosów
 
-### hair_soap_store_context
+### store_drop_context
 - Moduł: Context
 - Silnik: seedance_2_0 (upadek, chodzenie, panorama)
 - Czas: 7 s
-- First Frame: osoba idzie alejką drogerii z płynnym szamponem i go upuszcza; do uzupełnienia
-- End Frame: płynna panorama w prawo na półkę z kostkami mydła do włosów; do uzupełnienia
-- Stałe: alejka drogerii, płaskie światło jarzeniowe, jedna ciągła panorama bez cięć
-- Zmienne: model, produkt na półce
-- Prompt bazowy (EN): Handheld smartphone video in a bright drugstore aisle. [MODEL] walks toward camera holding a liquid shampoo bottle. The bottle slips from her hand and falls out of the bottom of the frame; the camera does not tilt down and stays level. With no pause the camera pans right in one fast continuous move and locks off tight and square on a shelf display of [PRODUCT], product filling the frame, minimal dead space. Audio: footsteps, bottle hitting the floor, ambient store hum, no music. [REALISM LOCK]
+- First Frame: osoba idzie alejką sklepu z [OLD_ALTERNATIVE] i go upuszcza; do uzupełnienia
+- End Frame: płynna panorama w prawo na półkę z [PRODUCT]; do uzupełnienia
+- Stałe: alejka sklepu, płaskie światło jarzeniowe, jedna ciągła panorama bez cięć
+- Zmienne: model, produkt, zamiennik, typ sklepu
+- Prompt bazowy (EN): Handheld smartphone video in a bright [STORE] aisle. [MODEL] walks toward camera holding [OLD_ALTERNATIVE]. It slips from her hand and falls out of the bottom of the frame; the camera does not tilt down and stays level. With no pause the camera pans right in one fast continuous move and locks off tight and square on a shelf display of [PRODUCT], product filling the frame, minimal dead space. Audio: footsteps, the item hitting the floor, ambient store hum, no music. [REALISM LOCK]
 - Notatki z testów: brak
 
-### hair_soap_selfie_cta
+### selfie_cta
 - Moduł: CTA
 - Silnik: kling3_0 (prawie statyczne ujęcie)
 - Czas: 5 s
-- First Frame: selfie z bliska, uśmiechnięty model trzyma kostkę mydła przy obiektywie; do uzupełnienia
+- First Frame: selfie z bliska, uśmiechnięty model trzyma [PRODUCT] przy obiektywie; do uzupełnienia
 - End Frame: model wskazuje palcem na produkt; do uzupełnienia
 - Stałe: kadr selfie z wyciągniętej ręki, światło z okna
 - Zmienne: model, produkt, kwestia CTA

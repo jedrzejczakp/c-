@@ -8,7 +8,7 @@ Przedstawiasz go użytkownikowi przed każdą generacją. Wypełniasz wszystkie 
 - Cel filmu i platforma:
 - Model (awatar): nazwa z biblioteki i Element ID
 - Łączna długość:
-- Skład modułów: np. `hair_soap_321_hook + hair_soap_store_context + hair_soap_selfie_cta`
+- Skład modułów: np. `321_reveal_hook + store_drop_context + selfie_cta`
 - Szacunek kredytów: suma z tabeli (jeśli narzędzie MCP nie zwraca cen, napisz "brak danych o cenie")
 
 ## Tabela klipów
