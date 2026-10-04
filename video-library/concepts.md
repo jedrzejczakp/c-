@@ -31,6 +31,18 @@ Plik czyta i uzupełnia skill `higgsfield-video-director`. Każdy wpis to jeden 
 
 ## Koncepty
 
+### store_shocked_concept
+- Nazwa długa: shocked coffee drop panning to the right hook (w filmie źródłowym "store concept")
+- Moduł: Hook
+- Silnik: seedance_2_0 (gasp, upadek kubka, panorama w prawo)
+- Czas: 5 s, 7 s gdy gasp, upadek i panorama mają się zmieścić bez pośpiechu
+- First Frame: dwaj mężczyźni w sklepie trzymają kawę i patrzą w tę samą stronę; do uzupełnienia
+- End Frame: kamera po panoramie w prawo zatrzymana na produkcie na półce; do uzupełnienia
+- Stałe: tło sklepu, kompozycja, kierunek spojrzenia, panorama w prawo
+- Zmienne: awatary, pudełko produktu
+- Prompt bazowy (EN): według szablonu ze skilla `store-point-pan-reveal`, wariant z upuszczeniem kawy, panorama w prawo, [PRODUCT] na półce.
+- Notatki z testów: brak
+
 ### hair_soap_321_hook
 - Moduł: Hook
 - Silnik: seedance_2_0 (zmiana mimiki i ruch odsłonięcia)

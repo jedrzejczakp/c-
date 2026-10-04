@@ -13,6 +13,13 @@ Jeśli żadnego z punktów 1 i 2 nie ma, napisz to wprost jednym zdaniem i pracu
 
 ## Zasady dobrego hooka wideo
 
+Kolejność ważności, gdy oceniasz hook:
+
+1. Ruch albo zdarzenie w pierwszej sekundzie. Zatrzymuje kciuk szybciej niż słowa.
+2. Emocja widoczna na twarzy (szok, zachwyt, obrzydzenie). Widz odruchowo chce wiedzieć, co ją wywołało.
+3. Luka ciekawości: film pokazuje reakcję albo zakryty przedmiot, a przyczynę dopiero później.
+4. Wyraźny związek z problemem widza, żeby obejrzał z właściwego powodu i nie odpadł w 3 sekundzie.
+
 Pierwsza klatka ma już coś pokazywać. Nie zaczynasz od wejścia postaci w kadr ani od pustego tła.
 
 Obraz, tekst na ekranie i kwestia mówiona w pierwszej sekundzie mówią to samo albo się uzupełniają. Tekst dodajesz w montażu, nie w generacji, bo modele psują litery.

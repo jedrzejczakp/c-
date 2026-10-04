@@ -64,6 +64,29 @@ Gdy użytkownik prosi o zapisanie konceptu ("zapisz to jako ..."), dopisujesz wp
 
 Modele (awatary) zapisujesz w tym samym pliku w sekcji "Modele" jako Element ID plus stały opis wyglądu. Nie łączysz dwóch Elementów w jednym prompcie, bo twarz zaczyna dryfować. Drugi obiekt (zwykle produkt) podajesz opisem albo jako `medias` z `role: image`.
 
+## Uczenie nowego konceptu
+
+Użytkownik uczy Cię konceptu tak, jak w filmie źródłowym: wrzuca klatkę początkową i końcową, prompt bazowy i nazwę. Przykład z filmu:
+
+```
+The first attached image is the first frame and the second attached image
+is the end frame. Save this and the prompt below. This hook is called the
+"shocked coffee drop panning to the right hook" and we reference it as the
+"store concept". If I attach another avatar in the future, keep the
+background and everything exactly the same, but replace the avatar.
+```
+
+Po takiej wiadomości:
+
+1. Jeśli użytkownik dał film zamiast klatek, wytnij je sam: `ffmpeg -i in.mp4 -frames:v 1 first.png` dla pierwszej i `ffmpeg -sseof -0.1 -i in.mp4 -frames:v 1 end.png` dla ostatniej klatki. Pliki zapisz w `video-library/frames/<nazwa_konceptu>/`.
+2. Opisz obie klatki słowami (kadr, tło, światło, ruch kamery między nimi). Opis zostaje w bibliotece nawet wtedy, gdy UUID w Higgsfield przestanie działać.
+3. Ustal z użytkownikiem, co jest stałe, a co podmieniane. Jeśli tego nie powiedział, zaproponuj podział i zapytaj.
+4. Dopisz wpis do `video-library/concepts.md` i potwierdź jednym zdaniem nazwę, pod którą koncept jest dostępny.
+
+## Komendy wywołania
+
+`Fire me a video of <koncept>`, `Wygeneruj wideo z konceptu <koncept>` albo sama nazwa konceptu znaczą: weź koncept z biblioteki, podmień zmienne podane w wiadomości (nowy awatar, produkt), dobierz silnik i parametry globalne, przedstaw storyboard. Użytkownik nie musi ponownie wgrywać klatek ani pisać promptu.
+
 ## Komendy skrótowe
 
 Komenda typu `Hook_Costco_1 + Model_2 + Bridge_3 + CTA_Selfie_2` oznacza:
@@ -74,7 +97,7 @@ Komenda typu `Hook_Costco_1 + Model_2 + Bridge_3 + CTA_Selfie_2` oznacza:
 
 ## Hooki
 
-Gdy użytkownik prosi o hook albo hook w storyboardzie jest słaby:
+Hook decyduje o tym, czy widz zostanie na filmie, więc przy hookach pracujesz najdokładniej. Gdy użytkownik prosi o hook albo hook w storyboardzie jest słaby:
 
 1. Szukasz wiedzy użytkownika o hookach w Obsidianie według procedury z `references/hooks.md` (sekcja "Skąd brać wiedzę").
 2. Jeśli vault nie jest dostępny w tym środowisku, korzystasz z banku hooków w `references/hooks.md`. Możesz też uruchomić subagenta (narzędzie Agent), żeby przeanalizował notatki albo referencyjne filmy, gdy użytkownik o to poprosi.
