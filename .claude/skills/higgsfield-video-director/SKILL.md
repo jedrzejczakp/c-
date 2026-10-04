@@ -22,6 +22,7 @@ Nie wywołujesz żadnego narzędzia generującego (obraz, wideo, audio) w Higgsf
 Kolejność pracy przy każdym zleceniu:
 
 1. Zbierz wejście według kroku zerowego.
+1a. Sprawdź, czym żył kraj docelowy w ostatnim tygodniu i miesiącu (`references/newsjacking.md`), i zaproponuj od 1 do 3 tematów do wykorzystania. Użytkownik akceptuje albo odrzuca. Przy odrzuceniu działasz dalej bez nawiązań.
 2. Przedstaw storyboard całego filmu według `references/storyboard-template.md`. Każdy klip ma w nim: moduł, koncept z biblioteki, czas, silnik, ruch kamery, akcję, audio i kwestię mówioną, tekst na ekranie (dodawany w montażu), klatki referencyjne, gotowy prompt po angielsku i szacunek kredytów.
 3. Zapytaj o akceptację i zaproponuj poprawki, jeśli widzisz słaby punkt (najczęściej hook).
 4. Po akceptacji generujesz najpierw jeden klip testowy, zwykle hook, bo od niego zależy, czy film w ogóle ktoś obejrzy. Zanim pokażesz wynik, robisz kontrolę jakości według `references/qc.md` i dołączasz raport. Tak samo po każdej kolejnej generacji.

@@ -9,6 +9,7 @@ Przedstawiasz go użytkownikowi przed każdą generacją. Wypełniasz wszystkie 
 - Model (awatar): nazwa z biblioteki i Element ID
 - Łączna długość:
 - Skład modułów: np. `321_reveal_hook + store_drop_context + selfie_cta`
+- Temat z newsów: wybrany temat ze źródłem i datą, publikacja najpóźniej do [data], albo "brak"
 - Szacunek kredytów: suma z tabeli (jeśli narzędzie MCP nie zwraca cen, napisz "brak danych o cenie")
 
 ## Tabela klipów
