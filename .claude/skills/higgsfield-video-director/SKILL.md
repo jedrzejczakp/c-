@@ -1,6 +1,6 @@
 ---
 name: higgsfield-video-director
-description: Dyrektor kreatywny wideo AI dla organicznego dropshippingu. Składa pionowe filmy (TikTok, Reels, Shorts) z modułów Hook, Context, Bridge i CTA zapisanych w bibliotece konceptów, dobiera silnik (Seedance 2.0 albo Kling 3.0) i generuje klipy przez Higgsfield MCP. Użyj, gdy użytkownik prosi o wideo produktowe, hook, wariant do split testu, zapis nowego konceptu ujęcia albo podaje komendę skrótową typu "Hook 1 + Model 2 + CTA 3". Przed każdą reklamą najpierw wypisuje, czego potrzebuje, potem przedstawia cały film do akceptacji, dopiero na końcu generuje.
+description: Dyrektor kreatywny wideo AI dla organicznego dropshippingu. Składa pionowe filmy (TikTok, Reels, Shorts) z modułów Hook, Context, Bridge i CTA zapisanych w bibliotece konceptów, dobiera silnik (Seedance 2.0 albo Kling 3.0) i generuje klipy przez Higgsfield MCP. Użyj, gdy użytkownik prosi o wideo produktowe, hook, wariant do split testu, zapis nowego konceptu ujęcia albo podaje komendę skrótową typu "Hook 1 + Model 2 + CTA 3", chce nowych hooków do gotowego filmu albo reklamy na wzór filmu konkurencji. Przed każdą reklamą najpierw wypisuje, czego potrzebuje, potem przedstawia cały film do akceptacji, dopiero na końcu generuje.
 ---
 
 # Dyrektor kreatywny wideo AI (Higgsfield MCP)
@@ -92,9 +92,13 @@ Po takiej wiadomości:
 3. Ustal z użytkownikiem, co jest stałe, a co podmieniane. Jeśli tego nie powiedział, zaproponuj podział i zapytaj.
 4. Dopisz wpis do `video-library/concepts.md` i potwierdź jednym zdaniem nazwę, pod którą koncept jest dostępny.
 
-## Koncept z filmu konkurencji
+## Koncept albo reklama na wzór filmu konkurencji
 
-Gdy użytkownik podaje film referencyjny i prosi o koncept ("zrób koncept z tego filmu"), postępujesz według `references/from-reference.md`: pobierasz film skillem `watch`, wycinasz klatki każdej sceny skryptem `scripts/scene_frames.sh`, rozkładasz strukturę skillem `dekoder-ugc` i zapisujesz gotowe koncepty do biblioteki.
+Gdy użytkownik podaje film referencyjny i prosi o koncept albo o własną reklamę na jego wzór ("zrób koncept z tego filmu"), postępujesz według `references/from-reference.md`: pobierasz film skillem `watch`, wycinasz klatki każdej sceny skryptem `scripts/scene_frames.sh`, rozkładasz strukturę skillem `dekoder-ugc` i zapisujesz gotowe koncepty do biblioteki.
+
+## Nowe hooki do gotowego filmu
+
+Gdy użytkownik daje gotowy film i prosi o wersje z innym otwarciem ("3 wersje z nowymi hookami, reszta bez zmian"), postępujesz według `references/hook-variants.md`: wycinasz obecny hook, zostawiasz resztę filmu bez zmian, generujesz 3 nowe hooki z różnych kategorii i (po zgodzie na montaż) składasz 3 kompletne filmy do split testu.
 
 ## Komendy wywołania
 

@@ -1,6 +1,9 @@
 # Koncept z filmu konkurencji
 
-Komenda: "zrób koncept z tego filmu <link albo plik>" (albo podobna prośba z filmem referencyjnym). Wynik: nowe koncepty w bibliotece z klatkami First i End Frame oraz mechanizm hooka w banku hooków.
+Dwa tryby:
+
+- "zrób koncept z tego filmu <link albo plik>": wynik to nowe koncepty w bibliotece z klatkami First i End Frame oraz mechanizm hooka w banku hooków.
+- "zrób reklamę mojego produktu na wzór tego filmu": robisz kroki 1 do 5, a potem zamiast pytać o zapis od razu budujesz storyboard pełnej reklamy dla produktu z briefu (lista potrzeb według `brief.md` na początku). Struktura perswazji (kolejność ról scen, rytm, długość, typ hooka) zostaje z filmu wzorcowego, a treść, kwestie mówione i kadry tworzysz od nowa. Koncepty zapisujesz do biblioteki dopiero po akceptacji storyboardu.
 
 ## Kroki
 
