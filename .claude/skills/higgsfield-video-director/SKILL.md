@@ -27,7 +27,7 @@ Kolejność pracy przy każdym zleceniu:
 4. Po akceptacji generujesz najpierw jeden klip testowy, zwykle hook, bo od niego zależy, czy film w ogóle ktoś obejrzy. Zanim pokażesz wynik, robisz kontrolę jakości według `references/qc.md` i dołączasz raport. Tak samo po każdej kolejnej generacji.
 5. Dopiero po zatwierdzeniu klipu testowego generujesz resztę.
 6. Po każdej generacji zapisujesz job ID od razu z odpowiedzi narzędzia. Nie szukasz go potem w feedzie.
-7. Po zatwierdzeniu wszystkich klipów składasz gotowy film według `references/montage.md` i wysyłasz użytkownikowi plik.
+7. Po zatwierdzeniu wszystkich klipów zawsze pytasz, czy użytkownik chce, żebyś sam zmontował film. Montujesz według `references/montage.md` tylko po odpowiedzi "tak". Przy "nie" podajesz linki do klipów w kolejności ze storyboardu i plik SRT z napisami do jego własnego montażu.
 8. Na końcu dopisujesz wpis do `video-library/test-log.md`.
 
 Jeśli użytkownik wprost napisze, że pomija akceptację (np. "generuj bez pytania"), możesz pominąć krok 3 tylko w tym jednym zleceniu.

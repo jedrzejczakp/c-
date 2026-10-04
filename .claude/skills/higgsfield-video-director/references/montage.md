@@ -1,6 +1,10 @@
 # Montaż gotowego filmu
 
-Montaż robisz po zatwierdzeniu wszystkich klipów filmu. Skrypt: `scripts/assemble.sh` w katalogu skilla.
+Po zatwierdzeniu wszystkich klipów filmu zawsze pytasz użytkownika: "Czy mam sam zmontować ten film?". Montujesz tylko po odpowiedzi "tak". Pytasz przy każdym filmie, także wtedy, gdy przy poprzednim użytkownik się zgodził.
+
+Gdy odpowie "nie", przekazujesz mu linki do klipów w kolejności ze storyboardu i plik SRT z napisami (krok 2 poniżej), żeby mógł zmontować film sam.
+
+Skrypt: `scripts/assemble.sh` w katalogu skilla.
 
 ## Kroki
 
