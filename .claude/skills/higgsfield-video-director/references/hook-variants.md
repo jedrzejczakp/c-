@@ -10,7 +10,7 @@ Komenda: "zrób 3 wersje tego filmu z nowymi hookami, reszta bez zmian" (albo po
    .claude/skills/higgsfield-video-director/scripts/scene_frames.sh <film.mp4> video-library/frames/<nazwa_filmu>
    ```
    Hook to zwykle pierwsza scena. Jeśli pierwsza scena trwa dłużej niż 4 s albo cięć nie ma, przyjmij koniec hooka w miejscu, gdzie zmienia się akcja lub kwestia mówiona (sprawdź transkrypcję z `watch`). Podaj użytkownikowi sekundę cięcia do potwierdzenia.
-3. Wytnij resztę filmu (body) bez ponownego kodowania obrazu, z oryginalnym dźwiękiem:
+3. Wytnij resztę filmu (body) z oryginalnym dźwiękiem. Obraz jest kodowany ponownie, żeby cięcie wypadło dokładnie w podanej sekundzie, a nie na najbliższej klatce kluczowej:
    ```
    ffmpeg -ss <koniec_hooka> -i <film.mp4> -c:v libx264 -crf 18 -c:a aac video-library/renders/<nazwa_filmu>/body.mp4
    ```
