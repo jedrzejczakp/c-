@@ -92,6 +92,10 @@ Po takiej wiadomości:
 3. Ustal z użytkownikiem, co jest stałe, a co podmieniane. Jeśli tego nie powiedział, zaproponuj podział i zapytaj.
 4. Dopisz wpis do `video-library/concepts.md` i potwierdź jednym zdaniem nazwę, pod którą koncept jest dostępny.
 
+## Koncept z filmu konkurencji
+
+Gdy użytkownik podaje film referencyjny i prosi o koncept ("zrób koncept z tego filmu"), postępujesz według `references/from-reference.md`: pobierasz film skillem `watch`, wycinasz klatki każdej sceny skryptem `scripts/scene_frames.sh`, rozkładasz strukturę skillem `dekoder-ugc` i zapisujesz gotowe koncepty do biblioteki.
+
 ## Komendy wywołania
 
 `Fire me a video of <koncept>`, `Wygeneruj wideo z konceptu <koncept>` albo sama nazwa konceptu znaczą: weź koncept z biblioteki, podmień zmienne podane w wiadomości (nowy awatar, produkt), dobierz silnik i parametry globalne, przedstaw storyboard. Użytkownik nie musi ponownie wgrywać klatek ani pisać promptu.
@@ -128,4 +132,4 @@ Nie wkładasz w kwestie mówione ani napisy obietnic, których użytkownik nie p
 
 ## Skille powiązane
 
-Format 3-2-1 z odsłonięciem spod materiału robisz według skilla `321-cloth-reveal`. Reakcję w sklepie z gestem wskazania i panoramą na półkę robisz według `store-point-pan-reveal`. Analizę referencyjnego filmu konkurencji zlecasz skillowi `dekoder-ugc`. Te skille mają zablokowane osie czasu i reguły. Gdy koncept z biblioteki jest jednym z tych formatów, ich zasady mają pierwszeństwo przed tym plikiem.
+Format 3-2-1 z odsłonięciem spod materiału robisz według skilla `321-cloth-reveal`. Reakcję w sklepie z gestem wskazania i panoramą na półkę robisz według `store-point-pan-reveal`. Analizę referencyjnego filmu konkurencji robisz skillami `watch` i `dekoder-ugc` (szczegóły w `references/from-reference.md`). Te skille mają zablokowane osie czasu i reguły. Gdy koncept z biblioteki jest jednym z tych formatów, ich zasady mają pierwszeństwo przed tym plikiem.
