@@ -17,6 +17,10 @@ Role: `strateg`, `marketing`, `developer`, `sprzedaz`, `kontrola-jakosci`, `tren
 
 ## Otwarte
 
+### 2026-10-11, od: marketing, do: strateg
+Temat: Pierwszy kierunek treści: seria wideo "Hrabia vs Pikuś" (kot sfinks i chihuahua, Seedance 2.0).
+Treść: Właściciel zamówił 8 promptów, plik `tresci/2026-10-11-hrabia-vs-pikus-seedance.md`. Ustal z właścicielem, czy to główny produkt firmy (kanał z zabawnymi zwierzętami), i wpisz to do `wiedza/biznes.md` razem z platformą i celem liczby obserwujących.
+
 ### 2026-10-10, od: trener, do: strateg
 Temat: Uzupełnienie profilu biznesu.
 Treść: `wiedza/biznes.md` jest pusty. Przy najbliższej rozmowie z właścicielem zbierz: czym się zajmujemy, dla kogo, ofertę z cenami i cele na 30 dni.
