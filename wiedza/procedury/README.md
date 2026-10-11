@@ -20,4 +20,4 @@ Ostatnia zmiana: RRRR-MM-DD, powód: <...>
 
 | Plik | Zadanie | Właściciel |
 |---|---|---|
-| (brak) | | |
+| `prompty-wideo-seedance.md` | Prompty do krótkich filmów AI (Seedance 2.0, GPT Image 2) | marketing |

@@ -2,6 +2,8 @@
 
 Data: 2026-10-11. Rola: marketing. Zlecenie: właściciel.
 
+Nieaktualne od 2026-10-11, powód: właściciel chce stylu realistycznego, różnych scenerii i psa jako agresora. Aktualna wersja: `2026-10-11-hrabia-vs-pikus-v2-realistyczne.md`.
+
 Seria krótkich, zabawnych filmów. Hrabia (kot sfinks) zawsze dokucza Pikusiowi (chihuahua). Po każdym psikusie Hrabia patrzy w kamerę, puszcza oczko i macha łapką do widzów. To jest stały podpis serii i musi być w każdym odcinku.
 
 ## Ustawienia techniczne

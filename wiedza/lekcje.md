@@ -17,6 +17,13 @@ Gdy ten sam błąd wraca, zwiększ licznik "Powtórzenia" w istniejącym wpisie 
 
 ---
 
+## 2026-10-11, rola: marketing
+Co się stało: Pierwsza wersja promptów "Hrabia vs Pikuś" była kreskówkowa (styl 3D), działa się w jednym mieszkaniu, a pies był biernym celem psikusów. Właściciel odrzucił ją tego samego dnia.
+Przyczyna: Marketing nie zapytał o styl wizualny i dynamikę postaci, tylko założył styl animacji. Nie użył skilli do hooków i wideo (kreator-ugc).
+Reguła na przyszłość: Przed pisaniem promptów wideo sprawdź procedurę `wiedza/procedury/prompty-wideo-seedance.md`. Domyślny styl to realistyczne nagranie z telefonu. W serii Hrabia vs Pikuś pies zawsze atakuje pierwszy, leniwy kot zawsze wygrywa, każdy odcinek ma inną scenerię.
+Dotyczy: marketing
+Powtórzenia: 1
+
 ## 2026-10-10, rola: system
 Co się stało: Firma startuje bez wspólnej pamięci, więc agenci w każdej sesji zaczynali od zera.
 Przyczyna: Wiedza zostawała w rozmowach, a nie w plikach.
